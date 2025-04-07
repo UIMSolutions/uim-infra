@@ -1,0 +1,23 @@
+name "uim-validations"
+description "Validations in MVC"
+authors "ONS"
+copyright "Copyright © 2018 - 2025, ONS"
+license "Apache-2.0"
+
+// target
+targetName "uim-validations"
+targetType "library"
+
+dependency "uim-lowlevel" path="../../lowlevel"
+
+sourcePaths "."
+importPaths "."
+
+// configuration "default" {}
+
+configuration "test_uim_validations" {
+	versions "test_uim_validations"
+}
+configuration "test_all" {
+	versions "test_uim_core" "test_uim_oop"
+}

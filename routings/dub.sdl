@@ -1,0 +1,24 @@
+name "uim-routings"
+description "V in MVC"
+authors "ONS"
+copyright "Copyright © 2018 - 2025, ONS"
+license "Apache-2.0"
+
+// target
+targetName "uim-routings"
+targetType "library"
+
+dependency "uim-lowlevel" path="../../lowlevel"
+dependency "uim-http" path="../http"
+
+sourcePaths "."
+importPaths "."
+
+// configuration "default" {}
+
+configuration "test_uim_routings" {
+	versions "test_uim_routings"
+}
+configuration "test_all" {
+	versions "test_uim_core" "test_uim_oop"
+}
