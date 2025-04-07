@@ -1,0 +1,25 @@
+name "uim-jsonbases"
+description "D-Lib for json databases"
+homepage "https://www.sueel.de/uim"
+license "Apache-2.0"
+copyright "Copyright © 2018-2025, Ozan Nurettin Süel"
+authors "Ozan Nurettin Süel"
+
+// target
+targetName "uim-jsonbases"
+targetType "library"
+
+dependency "uim-lowlevel" path="../../lowlevel"
+dependency "uim-filesystems" path="../filesystems"
+
+sourcePaths "."
+importPaths "."
+
+// configuration "default" {}
+
+configuration "test_uim_jsonbase" {
+	versions "test_uim_jsonbase"
+}
+configuration "test_all" {
+	versions "test_uim_core" "test_uim_oop"
+}

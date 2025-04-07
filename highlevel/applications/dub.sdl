@@ -1,0 +1,24 @@
+name "uim-applications"
+description "Library for applications"
+authors "ONS"
+copyright "Copyright © 2018 - 2025, ONS"
+license "Apache-2.0"
+
+// target
+targetName "uim-applications"
+targetType "library"
+
+dependency "uim-plattformlevel" path="../../plattformlevel"
+dependency "uim-applications" path="../applications"
+
+sourcePaths "."
+importPaths "."
+
+// configuration "default" {}
+
+configuration "test_uim_applications" {
+	versions "test_uim_applications"
+}
+configuration "test_all" {
+	versions "test_uim_core" "test_uim_oop"
+}

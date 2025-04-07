@@ -1,0 +1,19 @@
+name "uim-entitybases"
+homepage "https://www.sueel.de/uim"
+license "Apache-2.0"
+copyright "Copyright © 2018-2025, Ozan Nurettin Süel"
+authors "Ozan Nurettin Süel"
+
+description "D-Library for managing entity databases"
+
+// target
+targetName "uim-entitybases"
+targetType "library"
+
+dependency "uim-lowlevel" path="../../lowlevel"
+
+dependency "uim-filesystems" path="../filesystems"
+// dependency "uim-models" path="../models"
+
+sourcePaths "."
+importPaths "."

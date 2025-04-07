@@ -1,0 +1,16 @@
+name "uim-filesystems"
+homepage "https://www.sueel.de/uim"
+license "Apache-2.0"
+copyright "Copyright © 2018-2025, Ozan Nurettin Süel"
+authors "Ozan Nurettin Süel"
+description "D-Library for filesystem management"
+
+// target
+targetName "uim-filesystems"
+targetType "library"
+
+dependency "uim-lowlevel" path="../../lowlevel"
+
+sourcePaths "."
+importPaths "."
+
