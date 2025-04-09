@@ -1,4 +1,4 @@
-name "uim-virtualization"
+name "virtualization"
 description "Library for virtualization"
 authors "ONS"
 copyright "Copyright © 2018 - 2025, ONS"

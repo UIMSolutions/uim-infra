@@ -1,4 +1,4 @@
-name "uim-jsonbases"
+name "jsonbases"
 description "D-Lib for json databases"
 homepage "https://www.sueel.de/uim"
 license "Apache-2.0"

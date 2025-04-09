@@ -1,4 +1,4 @@
-name "uim-highlevel"
+name "highlevel"
 description "UIM high level library"
 homepage "https://www.sueel.de/uim"
 license "Apache-2.0"
