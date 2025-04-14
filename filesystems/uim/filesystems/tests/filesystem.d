@@ -240,8 +240,8 @@ import uim.filesystems;
     }
 
     auto newFileName = "file"~to!string(uniform(0, 1000));
-    fs.createFile(strPath~"/"~newFileName);
-    assert(fs.existsFile(strPath~"/"~newFileName), "\tERROR in %s (1): File %s / %s missing".format(moduleName, strPath, newFileName));
+    fs.createFile(normalizePath(strPath, newFileName));
+    assert(fs.existsFile(normalizePath(strPath, newFileName)), "\tERROR in %s (1): File %s / %s missing".format(moduleName, strPath, newFileName));
 
     newFileName = "file"~to!string(uniform(0, 1000));
     fs.createFile(strPath, newFileName);
@@ -271,7 +271,7 @@ import uim.filesystems;
 
     aFileName = "file"~to!string(uniform(0, 1000));
     fs.createFile(arrPath, aFileName);
-    assert(fs.file(arrPath~aFileName), "\tERROR IN %s: (3) File %s not found".format(moduleName, arrPath~aFileName));
+    assert(fs.file(normalizePath(arrPath, aFileName)), "\tERROR IN %s: (3) File %s not found".format(moduleName, normalizePath(arrPath, aFileName)));
     assert(fs.file(arrPath, aFileName), "\tERROR IN %s: (4) File %s - %s not found".format(moduleName, arrPath, aFileName));
   }
 
@@ -285,7 +285,7 @@ import uim.filesystems;
     auto newFileName = "newFile"~to!string(uniform(0, 1000));
     fs.createFile(strPath~"/"~oldFileName);
     fs.renameFile(strPath~"/"~oldFileName, newFileName);
-    assert(fs.existsFile(strPath~"/"~newFileName), "\tERROR IN %s: (1) No Rename of file %s to %s".format(moduleName, oldFileName, newFileName));
+    assert(fs.existsFile(normalizePath(strPath, newFileName)), "\tERROR IN %s: (1) No Rename of file %s to %s".format(moduleName, oldFileName, newFileName));
 
     oldFileName = "oldFile"~to!string(uniform(0, 1000));
     newFileName = "newFile"~to!string(uniform(0, 1000));
@@ -320,9 +320,9 @@ import uim.filesystems;
     }
 
     auto newFileName = "file"~to!string(now);
-    fs.createFile(strPath~"/"~newFileName);
-    assert(fs.existsFile(strPath~"/"~newFileName), "\tERROR (1) in %s: File %s - %s missing".format(moduleName, strPath, newFileName));
-    fs.createFile(strPath~"/"~newFileName);
+    fs.createFile(normalizePath(strPath, newFileName));
+    assert(fs.existsFile(normalizePath(strPath, newFileName)), "\tERROR (1) in %s: File %s - %s missing".format(moduleName, strPath, newFileName));
+    fs.createFile(normalizePath(strPath, newFileName));
 
     newFileName = "file"~to!string(uniform(0, 1000));
     fs.createFile(strPath, newFileName);
