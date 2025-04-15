@@ -5,15 +5,11 @@
 *****************************************************************************************************************/
 module uim.jsonbases.helpers.path;
 
+mixin(Version!"test_uim_jsonbases");
+
 import uim.jsonbases;
-
-unittest { 
-  version(test_uim_jsonbase) { 
-    debug writeln("\n", __MODULE__~": "~__PRETTY_FUNCTION__); 
-  }
-}
-
 @safe:
+
 // #region folderPath()
   string folderPath(string path, Json json, string separator = "/") {
     if (json.isEmpty) return null;

@@ -5,15 +5,11 @@
 *****************************************************************************************************************/
 module uim.jsonbases.helpers.folder;
 
+mixin(Version!"test_uim_jsonbases");
+
 import uim.jsonbases;
-
-unittest { 
-  version(test_uim_jsonbase) { 
-    debug writeln("\n", __MODULE__~": "~__PRETTY_FUNCTION__); 
-  }
-}
-
 @safe:
+
 bool folderhasKey(IFolder aFolder) {
   return (aFolder !is null && aFolder.exists);
 }

@@ -1,14 +1,11 @@
 module uim.routings.classes.routes.collection;
 
+mixin(Version!"test_uim_routings");
+
 import uim.routings;
 @safe:
 
-unittest { 
-  version(test_uim_routings) { 
-    debug writeln("\n", __MODULE__~": "~__PRETTY_FUNCTION__); 
-  }
-}
-    /**
+  /**
  * Contains a collection of routes.
  *
  * Provides an interface for adding/removing routes
