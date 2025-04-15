@@ -5,15 +5,11 @@
 *****************************************************************************************************************/
 module uim.jsonbases.helpers.versions;
 
+mixin(Version!"test_uim_routings");
+
 import uim.jsonbases;
-
-version(test_uim_jsonbase) { 
-  unittest {
-    debug writeln("\n", __MODULE__~": "~__PRETTY_FUNCTION__); 
-  }
-}
-
 @safe:
+
 // #region check
   bool checkVersion(Json aVersion, string[] keys = null) {
     if (aVersion.isEmpty) { 
