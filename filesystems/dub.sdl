@@ -9,7 +9,8 @@ description "D-Library for filesystem management"
 targetName "uim-filesystems"
 targetType "library"
 
-dependency "uim-lowlevel" path="../../lowlevel"
+dependency "uim-low" version="~>25.4.15"
+
 
 sourcePaths "."
 importPaths "."

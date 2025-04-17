@@ -9,7 +9,8 @@ targetType "library"
 targetName "uim-databases"
 
 dependency "ddbc" version="~>0.7.0"
-dependency "uim-lowlevel" path="../../lowlevel"
+dependency "uim-low" version="~>25.4.15"
+
 
 sourcePaths "." "."
 importPaths "." "."

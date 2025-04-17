@@ -9,8 +9,8 @@ authors "Ozan Nurettin Süel"
 targetName "uim-jsonbases"
 targetType "library"
 
-dependency "uim-lowlevel" path="../../lowlevel"
-dependency "uim-filesystems" path="../filesystems"
+dependency "uim-low" version="~>25.4.15"
+dependency "uim-infra:filesystems" version="*"
 
 sourcePaths "."
 importPaths "."

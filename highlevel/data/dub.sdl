@@ -8,8 +8,9 @@ license "Apache-2.0"
 targetName "uim-data"
 targetType "library"
 
-dependency "uim-plattformlevel" path="../../plattformlevel"
-dependency "uim-data" path="../data"
+dependency "uim-low" version="~>25.4.15"
+
+dependency "uim-infra:data" version="*"
 
 sourcePaths "."
 importPaths "."
