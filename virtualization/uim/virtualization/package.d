@@ -1,5 +1,5 @@
 module uim.virtualization;
 
 public {
-    import uim.lowlevel;
+    import uim.errors;
 }

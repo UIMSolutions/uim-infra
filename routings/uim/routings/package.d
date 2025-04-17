@@ -9,7 +9,7 @@ mixin(ImportPhobos!());
 
 
 public { // uim libraries
-  import uim.lowlevel;
+  import uim.errors;
   import uim.http;
 }
 

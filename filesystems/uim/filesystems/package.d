@@ -8,7 +8,7 @@ module uim.filesystems;
 mixin(ImportPhobos!());
 
 public { // uim libraries
-  import uim.lowlevel;
+  import uim.errors;
 }
 
 public { // uim.filesystem libraries

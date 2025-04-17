@@ -1,5 +1,5 @@
 module uim.servers;
 
 public {
-    import uim.lowlevel;
+    import uim.errors;
 }

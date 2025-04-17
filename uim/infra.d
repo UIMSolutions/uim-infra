@@ -13,7 +13,7 @@ public {
 }
 
 public {
-    import uim.lowlevel;
+    import uim.errors;
     
     import uim.databases;
     import uim.datasources;

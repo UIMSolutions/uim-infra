@@ -10,7 +10,7 @@ description "D-Library for managing entity databases"
 targetName "uim-entitybases"
 targetType "library"
 
-dependency "uim-low" version="~>25.4.15"
+dependency "uim-low" version="~>25.4.16"
 
 
 dependency "uim-infra:filesystems" version="*"

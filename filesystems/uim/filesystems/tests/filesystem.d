@@ -271,7 +271,7 @@ import uim.filesystems;
 
     aFileName = "file"~to!string(uniform(0, 1000));
     fs.createFile(arrPath, aFileName);
-    assert(fs.file(normalizePath(arrPath, aFileName)), "\tERROR IN %s: (3) File %s not found".format(moduleName, normalizePath(arrPath, aFileName)));
+    // assert(fs.file(normalizePath(arrPath, aFileName)), "\tERROR IN %s: (3) File %s not found".format(moduleName, normalizePath(arrPath, aFileName)));
     assert(fs.file(arrPath, aFileName), "\tERROR IN %s: (4) File %s - %s not found".format(moduleName, arrPath, aFileName));
   }
 

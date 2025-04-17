@@ -8,8 +8,8 @@ module uim.validations;
 mixin(ImportPhobos!());
 
 public { // uim libraries
-  import uim.lowlevel;
-  import uim.lowlevel;
+  import uim.errors;
+  import uim.errors;
 }
 
 public { // uim.filesystem libraries
