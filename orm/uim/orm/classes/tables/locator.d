@@ -1,7 +1,8 @@
 module uim.orm.classes.tables.locator;
 
-import uim.orm;
+mixin(Version!"test_uim_orm");
 
+import uim.orm;
 @safe:
 
 // Provides a default registry/factory for Table objects.

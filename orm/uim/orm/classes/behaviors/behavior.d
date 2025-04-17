@@ -1,13 +1,9 @@
 module uim.orm.classes.behaviors.behavior;
 
+mixin(Version!"test_uim_orm");
+
 import uim.orm;
 @safe:
-
-version (test_uim_orm) {
-  unittest {
-    writeln("-----  ", __MODULE__, "\t  -----");
-  }
-}
 
 class DORMBehavior : UIMObject, IORMBehavior {
     mixin(ORMBehaviorThis!());

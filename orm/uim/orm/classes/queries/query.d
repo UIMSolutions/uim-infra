@@ -1,5 +1,7 @@
 module uim.orm.classes.queries.query;
 
+mixin(Version!"test_uim_orm");
+
 import uim.orm;
 @safe:
 
