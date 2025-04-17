@@ -5,15 +5,11 @@
 *****************************************************************************************************************/
 module uim.jsonbases.classes.bases.memory;
 
+mixin(Version!"test_uim_jsonbase");
+
 import uim.jsonbases;
-
-unittest { 
-  version(test_uim_jsonbase) { 
-    debug writeln("\n", __MODULE__~": "~__PRETTY_FUNCTION__); 
-  }
-}
-
 @safe:
+
 class DMemoryJsonBase : DJsonBase {
   mixin(JsonBaseThis!("Memory"));
 
@@ -26,7 +22,5 @@ class DMemoryJsonBase : DJsonBase {
 mixin(JsonBaseCalls!("Memory"));
 
 unittest {
-  version(test_uim_jsonbase) { 
     debug writeln("\n", __MODULE__~": "~__PRETTY_FUNCTION__); 
-  }
 }

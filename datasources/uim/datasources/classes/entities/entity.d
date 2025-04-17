@@ -1,12 +1,10 @@
 module uim.datasources.classes.entities.entity;
 
-import uim.datasources;
 
-version(test_uim_datasources) { 
-  unittest {
-    debug writeln("\n", __MODULE__~": "~__PRETTY_FUNCTION__); 
-  }
-}
+mixin(Version!"test_uim_datasources");
+
+import uim.datasources;
+@safe:
 
 class DDatasourceEntity : UIMObject, IDatasourceEntity {
     mixin(DatasourceEntityThis!());

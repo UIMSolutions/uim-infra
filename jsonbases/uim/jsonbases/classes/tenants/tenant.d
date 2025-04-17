@@ -5,15 +5,11 @@
 *****************************************************************************************************************/
 module uim.jsonbases.classes.tenants.tenant;
 
+mixin(Version!"test_uim_jsonbase");
+
 import uim.jsonbases;
-
-unittest { 
-  version(test_uim_jsonbase) { 
-    debug writeln("\n", __MODULE__~": "~__PRETTY_FUNCTION__); 
-  }
-}
-
 @safe:
+
 class DJsonTenant : UIMObject, IJsonTenant, IJsonCollectionManager {
   mixin(JsonTenantThis!());
   this(IJsonBase aBase, Json[string] initData = null) { this(initData); this.base(aBase); }
@@ -28,7 +24,5 @@ class DJsonTenant : UIMObject, IJsonTenant, IJsonCollectionManager {
 }
 
 unittest {
-  version(test_uim_jsonbase) { 
     debug writeln("\n", __MODULE__~": "~__PRETTY_FUNCTION__); 
-  }
 }

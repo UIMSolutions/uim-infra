@@ -5,15 +5,11 @@
 *****************************************************************************************************************/
 module uim.jsonbases.classes.bases.file;
 
+mixin(Version!"test_uim_jsonbase");
+
 import uim.jsonbases;
-
-unittest { 
-  version(test_uim_jsonbase) { 
-    debug writeln("\n", __MODULE__~": "~__PRETTY_FUNCTION__); 
-  }
-}
-
 @safe:
+
 class DFileJsonBase : DJsonBase {
   mixin(JsonBaseThis!("File"));
 
@@ -55,7 +51,5 @@ mixin(JsonBaseCalls!("File"));
 // auto FileJsonBase(string newRootPath) { return new DFileJsonBase(newRootPath); }
 
 unittest {
-  version(test_uim_jsonbase) { 
     debug writeln("\n", __MODULE__~": "~__PRETTY_FUNCTION__); 
-  }
 }

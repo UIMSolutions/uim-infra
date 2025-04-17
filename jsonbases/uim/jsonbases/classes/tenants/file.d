@@ -24,8 +24,3 @@ class DFileJsonTenant : DJsonTenant {
 }
 mixin(JsonTenantCalls!("File"));
 
-unittest {
-  version(test_uim_jsonbase) { 
-    debug writeln("\n", __MODULE__~": "~__PRETTY_FUNCTION__); 
-  }
-}
