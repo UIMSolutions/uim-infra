@@ -12,7 +12,7 @@ public {
 }
 
 public { // uim libraries
-  import uim.lowlevel;
+  import uim.errors;
 }
 
 public { // uim.filesystem libraries

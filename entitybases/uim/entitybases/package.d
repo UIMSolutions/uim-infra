@@ -8,7 +8,7 @@ module uim.entitybases;
 mixin(ImportPhobos!());
 
 public { // Required uim libraries 
-  import uim.lowlevel;
+  import uim.errors;
   import uim.filesystems;
   // import uim.models;
 }

@@ -9,7 +9,7 @@ authors "Ozan Nurettin Süel"
 targetName "uim-highlevel"
 targetType "library"
 
-dependency "uim-low" version="~>25.4.15"
+dependency "uim-low" version="~>25.4.16"
 
 sourceFiles "source/uim/platformlevel.d"
 sourcePaths "."
