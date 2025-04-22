@@ -3,9 +3,9 @@
 * License: Subject to the terms of the Apache 2.0 license, as written in the included LICENSE.txt file.         *
 * Authors: Ozan Nurettin Süel (aka UIManufaktur)                                                                *
 *****************************************************************************************************************/
-module uim.storages.classes;
+module uim.storages.classes.buckets.bucket;
 
-public {
-  import uim.storages.classes.buckets;
-  import uim.storages.classes.storages;
-}
+mixin(Version!("test_uim_storages"));
+
+import uim.storages;
+@safe:
