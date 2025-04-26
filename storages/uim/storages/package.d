@@ -11,17 +11,19 @@ public { // uim libraries
   import uim.errors;
 }
 
-public { // uim.storages libraries
+public { // subpackages
   import uim.storages.classes;
+  import uim.storages.collections;
   import uim.storages.commands;
   import uim.storages.constants;
   import uim.storages.enumerations;
   import uim.storages.errors;
+  import uim.storages.exceptions;
   import uim.storages.factories;
   import uim.storages.helpers;
   import uim.storages.interfaces;
   import uim.storages.mixins;
-  import uim.storages.permissions;
   import uim.storages.registries;
   import uim.storages.tests;
+  import uim.storages.utils;
 }

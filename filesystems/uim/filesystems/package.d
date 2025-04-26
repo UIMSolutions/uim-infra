@@ -11,9 +11,11 @@ public { // uim libraries
   import uim.errors;
 }
 
-public { // uim.filesystem libraries
+public { // sub packages
   import uim.filesystems.classes;
   import uim.filesystems.collections;
+  import uim.filesystems.commands;
+  import uim.filesystems.constants;
   import uim.filesystems.enumerations;
   import uim.filesystems.errors;
   import uim.filesystems.exceptions;
@@ -23,4 +25,5 @@ public { // uim.filesystem libraries
   import uim.filesystems.mixins;
   import uim.filesystems.registries;
   import uim.filesystems.tests;
+  import uim.filesystems.utils;
 }

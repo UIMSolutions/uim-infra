@@ -9,16 +9,21 @@ mixin(ImportPhobos!());
 
 public { // uim libraries
   import uim.errors;
-  import uim.errors;
 }
 
-public { // uim.filesystem libraries
+public { // subpackages
   import uim.validations.classes;
+  import uim.validations.collections;
+  import uim.validations.commands;
+  import uim.validations.constants;
   import uim.validations.enumerations;
   import uim.validations.errors;
   import uim.validations.exceptions;
+  import uim.validations.factories;
   import uim.validations.helpers;
   import uim.validations.interfaces;
   import uim.validations.mixins;
+  import uim.validations.registries;
   import uim.validations.tests;
+  import uim.validations.utils;
 }

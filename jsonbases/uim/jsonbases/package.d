@@ -14,9 +14,13 @@ public {
   // import uim.logging;
 }
 
-public {
+public { // subpackages
   import uim.jsonbases.classes;
   import uim.jsonbases.collections;
+  import uim.jsonbases.commands;
+  import uim.jsonbases.constants;
+  import uim.jsonbases.enumerations;
+  import uim.jsonbases.errors;
   import uim.jsonbases.exceptions;
   import uim.jsonbases.factories;
   import uim.jsonbases.helpers;
@@ -24,6 +28,7 @@ public {
   import uim.jsonbases.mixins;
   import uim.jsonbases.registries;
   import uim.jsonbases.tests;
+  import uim.jsonbases.utils;
 }
 
 @safe:

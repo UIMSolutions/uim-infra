@@ -13,14 +13,19 @@ public { // Required uim libraries
   // import uim.models;
 }
 
-public { // uim.entitybases packages
+public { // subpackages
   import uim.entitybases.classes;
   import uim.entitybases.collections;
+  import uim.entitybases.commands;
+  import uim.entitybases.constants;
+  import uim.entitybases.enumerations;
+  import uim.entitybases.errors;
   import uim.entitybases.exceptions;
   import uim.entitybases.factories;
-  import uim.entitybases.interfaces;
   import uim.entitybases.helpers;
+  import uim.entitybases.interfaces;
   import uim.entitybases.mixins;
   import uim.entitybases.registries;
   import uim.entitybases.tests;
+  import uim.entitybases.utils;
 }

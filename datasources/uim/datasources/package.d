@@ -11,9 +11,11 @@ public { // uim libraries
   import uim.errors;
 }
 
-public { // uim.filesystem libraries
+public { // subpackages
   import uim.datasources.classes;
   import uim.datasources.collections;
+  import uim.datasources.commands;
+  import uim.datasources.constants;
   import uim.datasources.enumerations;
   import uim.datasources.errors;
   import uim.datasources.exceptions;
@@ -23,4 +25,5 @@ public { // uim.filesystem libraries
   import uim.datasources.mixins;
   import uim.datasources.registries;
   import uim.datasources.tests;
+  import uim.datasources.utils;
 }

@@ -15,9 +15,11 @@ public { // uim libraries
   import uim.errors;
 }
 
-public { // uim.filesystem libraries
+public { // subpackages
   import uim.databases.classes;
   import uim.databases.collections;
+  import uim.databases.commands;
+  import uim.databases.constants;
   import uim.databases.enumerations;
   import uim.databases.errors;
   import uim.databases.exceptions;
@@ -27,4 +29,5 @@ public { // uim.filesystem libraries
   import uim.databases.mixins;
   import uim.databases.registries;
   import uim.databases.tests;
+  import uim.databases.utils;
 }
