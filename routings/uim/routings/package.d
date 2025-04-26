@@ -7,7 +7,6 @@ module uim.routings;
 
 mixin(ImportPhobos!());
 
-
 public { // uim libraries
   import uim.errors;
   import uim.http;
@@ -15,11 +14,17 @@ public { // uim libraries
 
 public { // uim.filesystem libraries
   import uim.routings.classes;
+  import uim.routings.collections;
+  import uim.routings.commands;
+  import uim.routings.constants;
   import uim.routings.enumerations;
   import uim.routings.errors;
   import uim.routings.exceptions;
+  import uim.routings.factories;
   import uim.routings.helpers;
   import uim.routings.interfaces;
   import uim.routings.mixins;
+  import uim.routings.registries;
   import uim.routings.tests;
+  import uim.routings.utils;
 }

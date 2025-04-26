@@ -11,13 +11,19 @@ public { // uim libraries
   import uim.errors;
 }
 
-public { // uim.filesystem libraries
+public { // sub packages
   import uim.networks.classes;
+  import uim.networks.collections;
+  import uim.networks.commands;
+  import uim.networks.constants;
   import uim.networks.enumerations;
   import uim.networks.errors;
   import uim.networks.exceptions;
+  import uim.networks.factories;
   import uim.networks.helpers;
   import uim.networks.interfaces;
   import uim.networks.mixins;
+  import uim.networks.registries;
   import uim.networks.tests;
+  import uim.networks.utils;
 }
