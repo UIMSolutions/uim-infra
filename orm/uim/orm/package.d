@@ -14,6 +14,8 @@ public { // uim libraries
 public { // uim.filesystem libraries
   import uim.orm.classes;
   import uim.orm.collections;
+  import uim.orm.commands;
+  import uim.orm.constants;
   import uim.orm.enumerations;
   import uim.orm.errors;
   import uim.orm.exceptions;
@@ -23,6 +25,7 @@ public { // uim.filesystem libraries
   import uim.orm.mixins;
   import uim.orm.registries;
   import uim.orm.tests;
+  import uim.orm.utils;
 }
 
 /* public { // uim.filesystem libraries
