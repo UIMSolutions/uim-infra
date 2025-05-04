@@ -8,6 +8,7 @@ module uim.routings.classes.routes.dashed;
 mixin(Version!"test_uim_routings");
 
 import uim.routings;
+
 @safe:
 
 /**
@@ -16,19 +17,19 @@ import uim.routings;
  * is parsed as `["plugin": "MyPlugin", "controller": "MyController", "action": "myAction"]`
  */
 class DDashedRoute : DRoute {
-    mixin(RouteThis!("Dashed"));
+  mixin(RouteThis!("Dashed"));
 
-    /**
+  /**
      * Flag for tracking whether the defaults have been inflected.
      *
      * Default values need to be inflected so that they match the inflections that
      * match() will create.
      */
-    protected Json[string] _inflectedDefaults = null;
+  protected Json[string] _inflectedDefaults = null;
 }
 
 mixin(RouteCalls!("Dashed"));
 
 unittest {
-    assert(testRoute(new DDashedRoute));
+  assert(testRoute(new DDashedRoute));
 }

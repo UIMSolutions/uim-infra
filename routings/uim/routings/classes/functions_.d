@@ -5,8 +5,9 @@
 *****************************************************************************************************************/
 module uim.routings.classes.functions_;
 
-import uim.routings;
+mixin(Version!"test_uim_routings");
 
+import uim.routings;
 @safe:
 
 // Returns an array URL from a route path string.

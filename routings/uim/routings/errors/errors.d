@@ -3,8 +3,9 @@
 * License: Subject to the terms of the Apache 2.0 license, as written in the included LICENSE.txt file.         *
 * Authors: Ozan Nurettin Süel (aka UIManufaktur)                                                                *
 *****************************************************************************************************************/
-module uim.routings.classes.plugins;
+module uim.routings.errors.errors;
 
-public {
-    import  uim.routings.classes.plugins.plugin;
-}
+mixin(Version!"test_uim_routings");
+
+import uim.routings;
+@safe:
